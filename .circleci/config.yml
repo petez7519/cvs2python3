@@ -1,0 +1,23 @@
+version: 2.1
+
+jobs:
+  check-python-pip-versions:
+    docker:
+      - image: python:3.9  # Use a Python Docker image
+    steps:
+      - checkout  # Check out the code from the repository
+      - run:
+          name: Install Dependencies
+          command: |
+            python -m pip install --upgrade pip  # Upgrade pip (optional)
+      - run:
+          name: Check Python and Pip Versions
+          command: |
+            python --version
+            pip --version
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - check-python-pip-versions
