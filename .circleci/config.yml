@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Execute Python Script
           command: |
-            python cvs2python3.py
+            python converter.py
             
 workflows:
   version: 2
