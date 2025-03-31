@@ -15,7 +15,7 @@ jobs:
           command: |
             python --version
             pip --version
-
+            
 workflows:
   version: 2
   test:
