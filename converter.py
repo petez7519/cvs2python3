@@ -2,6 +2,7 @@ import csv
 import json
 
 # Open the CSV file and read its contents
+#need to loop thru for artifact files and use a parameter value that is incremented
 csv_file = 'your_file.csv'
 json_file = 'output_file.json'
 
