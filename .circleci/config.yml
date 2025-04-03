@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: python:3.9  # Use a Python Docker image
     steps:
-      # - checkout  # Check out the code from the repository
+      - checkout  # Check out the code from the repository
       - run:
           name: Install Dependencies
           command: |
@@ -15,11 +15,6 @@ jobs:
           command: |
             python3 --version
             pip3 --version
-
-       - run:
-          name: Execute Python Script
-          command: |
-            python3 converter.py
             
 workflows:
   version: 2
