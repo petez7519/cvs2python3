@@ -15,11 +15,6 @@ jobs:
           command: |
             python3 --version
             pip3 --version
-
-    #   - run:
-    #      name: Execute Python Script
-    #      command: |
-    #        python3 converter.py
             
 workflows:
   version: 2
