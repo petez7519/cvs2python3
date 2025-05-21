@@ -10,7 +10,7 @@ jobs:
           name: Install Dependencies
           command: |
             set -e
-            python -m pip install --upgrade pip  # Upgrade pip (optional)
+            python -m pip install --upgrade pipUpgrade pip (optional)
       - run:
           name: Check Python and Pip Versions
           command: |
